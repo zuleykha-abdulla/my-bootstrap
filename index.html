@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-bootstrap</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="jumbotron text-center p-3 mb-2 bg-primary text-white">
+      <h1>Bootstrap nədir</h1>
+    </div>
+
+    <div class="container p-3 mb-2 bg-danger text-white">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Column 1</h3>
+          <p>
+            Bootstrap daha sürətli və asan veb səhifələr hazırlamaq üçün pulsuz
+            bir framework-dür.
+          </p>
+          <p></p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 2</h3>
+          <p>
+            Bootstrap-da formalar, düymələr, cədvəllər, naviqasiya, modallar,
+            şəkil karuselləri və bir çox başqa elementlər üçün HTML və CSS
+            əsaslı dizayn şablonları, həmçinin əlavə JavaScript plaginləri
+            daxildir.
+          </p>
+       
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 3</h3>
+          <p>
+            Bootstrap vasitəsi ilə siz asanlıqla mobil responsive dizaynlar
+            yaratmaq imkanı verir
+          </p>
+        
+        </div>
+      </div>
+    </div>
+
+<!---- Konteynerlərin tezimi---->
+
+
+    <div class="container">
+      <h1>Bootstrap Containers</h1>
+      <p>
+        Konteynerlər içindəki məzmunu saxlamaq üçün istifadə olunur və iki
+        konteyner sinfi mövcuddur:
+        <br />
+        Container - responsive sabit genişlikdə konteyner təmin edir
+      </p>
+    </div>
+    <div class="container-fluid">
+      <h1>Container-fluid</h1>
+      <p class="text-decoration-underline">
+        Container-fluid - isə responsiv ekranın bütün genişliyini əhatə edən tam
+        konteynerlə təmin edir.
+      </p>
+    </div>
+    <!-----cedvelin kenarlarinin border ile tenzimlenmesi-->
+    <div class="container">
+      <h2>RESPONSIVE KONTEYNERLER</h2>
+      <p>
+        The .table-bordered class adds borders to a table: .table-bordered class
+        - cədvəli kənar xəttlər ilə tənzimləyir
+      </p>
+      <table class="table table-bordered, table-danger table-striped">
+        <!-------- cedvelin basligi started-->
+        <thead>
+          <tr class="table-primary">
+            <th>Class</th>
+            <th>(Extra small kicik olarsa 576px)</th>
+            <th>Small≥576px</th>
+            <th>Medium≥768px</th>
+            <th>Large≥992px</th>
+            <th>Extra large≥1200px</th>
+            <th>XXL≥1400px</th>
+          </tr>
+        </thead>
+<!------cedvelin body hissesi started-->
+        <tbody>
+          <tr>
+            <td>.container-sm</td>
+            <td>100%</td>
+            <td>540px</td>
+            <td>720px</td>
+            <td>960px</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <td>.container-md</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>720px</td>
+            <td>960px</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <td>.container-lg</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>960px</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <td>.container-xl</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <td>.container-xxl</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>1320px</td>
+          </tr>
+        </tbody>
+      </table>
+      <!------table finish-->
+    </div>
+<!---- mouse ile setrin uzerine gelende rengin deyisilmesinin tenzimi-->
+
+    <table class="table table-dark table-hover">
+      <thead>
+        <tr class="table-primary">
+          <th>Class</th>
+          <th>(Extra small kicik olarsa 576px)</th>
+          <th>Small≥576px</th>
+          <th>Medium≥768px</th>
+          <th>Large≥992px</th>
+          <th>Extra large≥1200px</th>
+          <th>XXL≥1400px</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>.container-sm</td>
+          <td>100%</td>
+          <td>540px</td>
+          <td>720px</td>
+          <td>960px</td>
+          <td>1140px</td>
+          <td>1320px</td>
+        </tr>
+        <tr>
+          <td>.container-md</td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>720px</td>
+          <td>960px</td>
+          <td>1140px</td>
+          <td>1320px</td>
+        </tr>
+        <tr>
+          <td>.container-md</td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>720px</td>
+          <td>960px</td>
+          <td>1140px</td>
+          <td>1320px</td>
+        </tr>
+        <tr>
+          <td>.container-xl</td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>1140px</td>
+          <td>1320px</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+<!--Bootstrap Grid Sisteminin tenzimlenmesi------->
+
+    <div>
+      <h1>Bootstrap Grid Sistemi</h1>
+      <ul>
+        <li>
+          Bootstrap-ın grid sistemi flexbox ilə qurulub və səhifədə 12-yə qədər
+          sütun hazırlamağa imkan verir.Grid-lər həmişə row – klasının içində
+          olur
+        </li>
+        <li>
+          Bütün 12 sütunu ayrı-ayrılıqda istifadə etmək istəmirsinizsə, daha
+          geniş sütunlar yaratmaqla sütunları birlikdə qruplaşdıra bilərsiniz:
+        </li>
+        <li>
+          Grid sistemi responsivdir və sütunlar ekran ölçüsündən asılı olaraq
+          avtomatik olaraq yenidən formalaşır.
+        </li>
+        <li>
+          Sütünların cəminin 12 və ya daha az əlavə olunduğundan əmin olun
+          (bütün 12 mövcud sütundan istifadə etməyiniz tələb olunmur).
+        </li>
+      </ul>
+    </div>
+    <div class="p-3 mb-2 bg-dark text-white">
+      <h1>Grid Classes 5 dənədir</h1>
+      <ul>
+        <li>.col- (extra small devices - screen width less than 576px)</li>
+        <li>
+          .col-sm- (small devices - screen width equal to or greater than 576px)
+        </li>
+        <li>
+          .col-lg- (large devices - screen width equal to or greater than 992px)
+        </li>
+        <li>
+          .col-xl- (xlarge devices - screen width equal to or greater than
+          1200px)
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col">.col-4</div>
+
+      <div class="col">.col-4</div>
+
+      <div class="col">.col-4</div>
+
+      <h3>
+        Kodda göründüyü kimi 12-lik grid sistemini 3 bərabər hissəyə böləcək bu
+        yazım forması
+      </h3>
+    </div>
+    <!---dörd bərabər enli sütunun tenzimlenmesi------>
+
+    <div class="shadow-lg p-3 mb-5 bg-body rounded">
+      <h1>Responsive Columns</h1>
+      <p>
+        Aşağıdakı nümunə planşetlərdən başlayaraq və əlavə böyük masaüstlərinə
+        qədər dörd bərabər enli sütunun necə yaradılacağını göstərir. Eni 576
+        pikseldən az olan mobil telefonlarda və ya ekranlarda sütunlar avtomatik
+        olaraq bir-birinin üstünə yığılacaq:
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">.col-sm-3
+        <br>
+        <p class="bg-warning text-white ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi cum placeat error rerum corrupti natus alias sint. Sint, fugit delectus explicabo eaque dolore rem incidunt cupiditate nulla. Cum, molestiae illo?</p>
+      </div>
+      <div class="col-sm-3">.col-sm-3
+        <br>
+        <p class="bg-danger text-white text-decoration-underline">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, quae accusamus? Praesentium et libero recusandae architecto illum. Tempora, magni ea in necessitatibus doloribus ipsum laborum dolore hic et eaque quis?</p>
+      </div>
+      <div class="col-sm-3">.col-sm-3
+        <br>
+        <p class="bg-danger text-white text-decoration-underline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sed quam sint nulla quaerat aperiam voluptatibus earum eveniet officiis qui quae ratione, eius ex eaque accusantium praesentium modi eum officia.</p>
+      </div>
+      <div class="col-sm-3">.col-sm-3
+        <br>
+        <p class="bg-warning text-white ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aliquid similique, eos accusantium vel accusamus quas. Error officiis ipsum repellendus? Pariatur corrupti eaque sit architecto necessitatibus veritatis est ex assumenda?</p>
+      </div>
+    </div>
+
+    <!----İki qeyri-bərabər sütunun yaradilmasi---->
+    <div>
+      <h1>İki qeyri-bərabər sütun</h1>
+      <p class="text-uppercase">
+        Aşağıdakı nümunə planşetlərdən başlayaraq böyük əlavə masaüstlərinə
+        miqyaslanan iki müxtəlif enli sütunun necə əldə olunacağını göstərir:
+        <br />
+        Solda isə col-ların iç-içədə istifadə oluna biləcəyini göstərir
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">.col-sm-4</div>
+      <div class="col-sm-8">.col-sm-8</div>
+    </div>
+<!---Ekran başlıqları adi başlıqlardan daha çox fərqlənmək üçün -->
+    <div class="container">
+      <h1>Bootstrap Yazılar</h1>
+      <p class="text-capitalize fw-bold">
+        Ekran başlıqları adi başlıqlardan daha çox fərqlənmək üçün istifadə
+        olunur (daha böyük şrift ölçüsü və daha yüngül şrift çəkisi):
+      </p>
+      <h1 class="display-1">Display 1</h1>
+      <h1 class="display-2">Display 2</h1>
+      <h1 class="display-3">Display 3</h1>
+      <h1 class="display-4">Display 4</h1>
+    </div>
+    <!---Arxa fon rəngini dəyişmək üçün bg tetbiq edilir-- -->
+    <div>
+      <h1>Bootstrap Rənglər</h1>
+      <p class="text-uppercase fw-bold">
+        Arxa fon rəngini dəyişmək üçün bg-.... dən istifadə olunur
+      </p>
+      <p class="bg-primary text-white">This text is important.</p>
+      <p class="bg-success text-white">This text indicates success.</p>
+      <p class="bg-info text-white">This text represents some information.</p>
+      <p class="bg-warning text-white">This text represents a warning.</p>
+      <p class="bg-danger text-white">This text represents danger.</p>
+      <p class="bg-secondary text-white">Secondary background color.</p>
+      <p class="bg-dark text-white">Dark grey background color.</p>
+      <p class="bg-light text-dark">Light grey background color.</p>
+    </div>
+<!----text uzerinde emeliyyatlar---->
+    <div>
+      <p class="text-uppercase fw-bold">
+        Fərqli rənglərdə yazıları yazmaq üçün text-... İstifadə olunur
+      </p>
+      <p class="text-muted">This text is muted.</p>
+      <p class="text-primary">This text is important.</p>
+      <p class="text-success">This text indicates success.</p>
+      <p class="text-info">This text represents some information.</p>
+      <p class="text-warning">This text represents a warning.</p>
+      <p class="text-danger">This text represents danger.</p>
+      <p class="text-secondary">Secondary text.</p>
+      <p class="text-dark">This text is dark grey.</p>
+      <p class="text-body">Default body color (often black).</p>
+      <p class="text-light">This text is light grey (on white background).</p>
+      <p class="text-white">This text is white (on white background).</p>
+    </div>
+
+    <!----image carousel slide yerlesdirilir-->
+
+    <div id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/f10.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/f3.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/f4.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </body>
+</html>
